@@ -27,7 +27,8 @@ __all__ = ['ezrss',
            'kat',
            'nzbx',
            'iptorrents',
-           'omgwtfnzbs'
+           'omgwtfnzbs',
+           'publichd'
            ]
 
 import sickbeard
