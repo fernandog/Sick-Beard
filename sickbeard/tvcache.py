@@ -324,6 +324,9 @@ class TVCache():
         if not isinstance(name, unicode):
             name = unicode(name, 'utf-8')
 
+        if not isinstance(url, unicode):
+            url = unicode(url, 'utf-8')
+
         myDB.action("INSERT INTO " + self.providerID + " (name, season, episodes, tvrid, tvdbid, url, time, quality) VALUES (?,?,?,?,?,?,?,?)",
                     [name, season, episodeText, tvrage_id, tvdb_id, url, curTimestamp, quality])
 
